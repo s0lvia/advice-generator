@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:hsl(218, 23%, 16%);
+  min-height: 100vh;
+  
+
+  @media screen and (min-width: 376px){
+    align-items: center;
+    justify-content: center;
+    padding:0
+  }
+}
+
+.card { 
+    background-color: hsl(217, 19%, 24%);
+    width: 70%;
+    height:45%;
+    border-radius: 10px;
+    padding:35px;
+    position: relative;  
+
+    box-shadow: 4px;
+    @media screen  and (min-width: 376px){
+      width: 40%;
+      height: auto;
+      }
+}
+
+.divider {
+  width: 90%;
+  margin-left: 13px;
+  padding-top: 15px;
+  
+  @media screen  and (min-width: 376px){
+    width: 100%;
+    margin:0;
+
+  }
+
+}
+
+.conatiner {
+  left: 41%;
+  position: absolute;
+  
+
+  @media screen  and (min-width: 376px){
+    left: 46%;
+
+  }
+}
+.dice-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 70px;
+  width: 60px;
+  height:60px;
+  background-color:hsl(150, 100%, 66%) ;
+  z-index: 10000;
+  cursor: pointer;
+  border: none; 
+
+  @media screen  and (min-width: 376px){
+  width:50px;
+  height:50px;
+  }
+  
+}
+
+.dice-button:focus {
+  outline-width: 170px;
+  box-shadow: rgb(22, 230, 56) 0 -2px 15px 1px;;
+}
+
+.text-container {
+  text-align: center;
+  font-family: 'Manrope' , sans-serif;
+  height: auto;
+
+
+  .advice {
+    color:hsl(150, 100%, 66%);
+    letter-spacing: 5px;
+    font-size: 10px;
+    font-weight: 600;
+
+    .span{
+      letter-spacing: 2px;
+    }
+
+    @media screen  and (min-width: 376px){
+      font-size: 14px;
+      font-size: 300;
+      }
+    
+  }
+
+  .quote {
+      color: hsl(193, 38%, 86%);
+      font-size: 28px;
+      font-weight:800;
+      margin:0 auto;
+    //word-wrap: break-word;
+      text-align: center;
+    }
+
+
+}
+// 
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
